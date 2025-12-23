@@ -70,7 +70,7 @@ fun AppNavigation() {
             )
         },
         bottomBar = {
-            NavigationBar {
+            NavigationBar() {
                 bottomNavDestinations.forEach { destination ->
                     NavigationBarItem(
                         icon = {
