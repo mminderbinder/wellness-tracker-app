@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Nightlight
 import androidx.compose.material.icons.outlined.WbSunny
 import androidx.compose.material.icons.outlined.WbTwilight
 import androidx.compose.material3.Icon
@@ -46,7 +47,7 @@ fun CalendarDay(
         ) {
             Text(
                 text = date.dayOfMonth.toString(),
-                style = MaterialTheme.typography.titleLarge,
+                style = MaterialTheme.typography.titleSmall,
                 textAlign = TextAlign.Center,
                 color = if (isSelected) {
                     MaterialTheme.colorScheme.primary
@@ -82,7 +83,7 @@ fun CalendarDay(
             modifier = Modifier.size(40.dp)
         ) {
             Icon(
-                imageVector = Icons.Outlined.WbTwilight,
+                imageVector = Icons.Outlined.Nightlight,
                 contentDescription = "Night mood",
                 tint = if (hasNightMood) {
                     MaterialTheme.colorScheme.primary
