@@ -11,13 +11,14 @@ espressoCore = "3.7.0"
 kotlinxCoroutinesAndroid = "1.10.2"
 leakcanaryAndroid = "2.14"
 lifecycleRuntimeKtx = "2.10.0"
-activityCompose = "1.12.1"
-composeBom = "2025.12.00"
+activityCompose = "1.12.2"
+composeBom = "2025.12.01"
 navigationCompose = "2.9.6"
 roomCompiler = "2.8.4"
 ksp = "2.2.10-2.0.2"
-vico = "2.3.6"
 materialIconsExtended = "1.7.8"
+charty = "3.0.0-rc01"
+uiTextGoogleFonts = "1.10.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,8 +47,9 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
-vico-compose = { group = "com.patrykandpatrick.vico", name = "compose", version.ref = "vico" }
-vico-compose-m3 = { group = "com.patrykandpatrick.vico", name = "compose-m3", version.ref = "vico" }
+charty = { module = "com.himanshoe:charty", version.ref = "charty" }
+androidx-compose-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
