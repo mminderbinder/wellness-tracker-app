@@ -79,8 +79,9 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
 
-    // Charty
-    implementation(libs.charty)
+    // Vico
+    implementation(libs.vico.compose)
+    implementation(libs.vico.compose.m3)
 
     // Navigation
     implementation(libs.androidx.navigation.compose)
